@@ -1,0 +1,126 @@
+.pop-slider{
+    &__item {
+        display: inline-block;
+        position: relative;
+        padding: 54px 10px 10px;
+        width:220px;
+        &--user-name {
+            display: block;
+        }
+        & + & {
+         margin-left: 5px;
+        }
+        &--text {
+            padding: 15px 20px 20px;
+        }    
+        &--container {
+        background-color: #fff;
+        box-shadow: 0 2px 4px 0px rgba(175, 162, 162, 0.4);
+        transition: all 0.4s ease-in;
+        padding-bottom: 0px; 
+        img {
+            width: 100%;
+           }
+        }
+        &--picture{
+            position: relative;
+        }
+        &--user-name{
+            text-align: right;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        &.active {
+             .pop-slider__item--container {
+                width: 325px;
+            }
+
+            .label-text {
+                &--left{
+                    transform: scale(1.5);
+                    left:16px;
+                    top:16px;
+                }
+                }
+        }
+        .chef-choice {
+            width: 100px;
+            position: absolute;
+            right: 17px;
+            top: -50px;
+            z-index: 10;
+        }
+    }
+    &__wrap {
+        padding-bottom: 60px;
+        .slide-next, .slide-prev {
+            top: 100% !important;
+            position: absolute;
+            cursor: pointer;
+        }
+        .slide-next {
+            right: 150px;
+            left:auto;
+        }
+        .slide-prev{
+            right: 208px;
+            left:auto;
+        }
+    }
+}
+
+
+.label-text{
+    &--box {
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        color: #fff;
+        text-align: center;
+        background: rgba(0,0,0,0.3);
+        font-size: 15px;
+        .enum {
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+            padding-top: 8px;
+        }
+    }
+}
+
+
+
+
+
+.ico-leftarrow {
+    right: 0;
+    bottom: 4px;
+    width: 50px;
+    height: 50px;
+    background-image: url('/images/assets/go-btn.png');
+    background-position: 80%;
+    cursor: pointer;
+}
+
+.slick-arrow.slick-prev {
+    bottom: -40px !important;
+    right: 12vw;
+    top:auto;
+    left:auto;
+    &:before{
+        content: none;
+    }
+}
+
+.slick-arrow.slick-prev.slick-disabled, .slick-arrow.slick-next.slick-disabled {
+    opacity: 0.5;
+}
+
+.slick-arrow.slick-next {
+    right: 6vw;
+    bottom: -40px !important;
+    top:auto;
+    &:before{
+        content: none;
+    }
+}
