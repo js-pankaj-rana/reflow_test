@@ -3,24 +3,113 @@
     <head>
         <meta charset="utf-8"/>
         <title>Test Excercise</title>
-       <style>
-        div#map {
-                    height: 500px;
-                }
-        </style>
+       <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     </head>
     <body>
+        <header class="header-section">
+                <nav class="navbar navbar-default">
+                        <div class="container">
+                                <div class="navbar-header">
+                        <a  class="navbar-brand" href="/">
+                            <img src="" alt="images"/>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" >
+                            <li class="active"><a href="" class="navbar-item">
+                                Home 
+                            </a></li>
+                            <li><a href="" class="navbar-item">
+                                Products
+                            </a></li>
+                            <li><a href=""  class="navbar-item">
+                                Developers
+                            </a></li>
+                            <li><a href=""  class="navbar-item">
+                                Partners
+                            </a></li>
+                            <li><a href=""  class="navbar-item">
+                                About Us
+                            </a></li>
+                            <li><a href=""  class="navbar-item">
+                                Contact Us
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-
-        <section id="app"></section>
+        <section class="heroshot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-6">
+                        <h2 class="header header-type-2">
+                                Smart Open Banking Platform
+                        </h2>
+                        <p class="text-regular">
+                            Seamlessly connecting with banks and services providers to create new financial experiences for everyone.
+                        </p>
+                        <button class="btn btn-primary">
+                                Lets Talk
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         
-        <script src="/scripts/react.development.js" crossorigin></script>
-        <script src="/scripts/react-dom.development.js" crossorigin></script>
+        <section class="report">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="header header-type-2">
+                                    API Latency Analysis
+                            </h2>
+                            <h2 class="header header-type-1">
+                                    Latency by Call Component
+                            </h2>
+                            <div class="">
+                                    CMA9 Open APIs
+                                    API Call Breakdown (Fatest to Slowest by Total Times)
+                            </div>
+                            <div>Time is Milliseconds</div>
+                            <h4 class="header header-type-4">
+                                    Latency breakdown of typical API transactions times including DNS lookup, handshake, connection time and server side timings.
+                            </h4>
+                            
+                            <button class="btn btn-primary">
+                                    Lets Talk
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <footer>
+            <div class="stripper">
+                <div class="container">    
+                    <div class="row">
+                        <div class="col-md-8">
+                                Intersted to talk more about how we can build the future of financial services? We're happy to hear from you.
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-border">
+                                Contact us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </footer>
+        
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrnTD6GqWo_WA9OkItgdYTKaX_CfKxcuo"></script>
-
-        
-        <!-- Load our React component. -->
-        <script src="bundle.js"></script>
     </body>
 </html>

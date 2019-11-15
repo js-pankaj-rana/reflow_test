@@ -1,0 +1,66 @@
+@import './mixin';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+$color-white: #ffffff;
+$color-black: invert($color-white);
+
+$color-dark: #444444;
+$color-darker: #333333;
+
+
+$color-gredient1: #5d43bd;
+$color-gredient2: #6541be;
+
+
+$color-gredient3: #4c6cd5;
+$color-gredient4: #43358b;
+
+
+$footer-black: #02010a;
+$font-color1:#606296;
+$font-color-header: #2e2a27;
+
+$color-brinjal: #4733ec;
+$color-brinjal1: #484398;
+
+$color-gray1:#abaebe;
+
+$dns: #7b7b7b;
+$connection: #9f9f9f;
+$handshake: #abaebd;
+$uploaded: #4b6e9b;
+$downloaded: #4833ef;
+$processing: #4c41a0;
+
+$border-button: #263f72;
+
+
+
+
+%font-regular {
+    font-family: 'Roboto:400', sans-serif;
+}
+
+%regular_semibold {
+    font-family: 'Roboto:500', sans-serif;
+}
+
+%regular_bold {
+    font-family: 'Roboto:700', sans-serif;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+$size-xl: size(26);
+$size-lg: size(16);
+$size-md: size(14);
+$size-sm: size(12);
+$size-xs: size(10);
+
+$mobile: 'only screen and (max-width : 767px)';
+$tablet: 'only screen and (min-width : 768px) and (max-width : 1023px)';
+$desktop: 'only screen and (min-width : 1024px)';
+
